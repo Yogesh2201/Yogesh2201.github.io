@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogesh Kumar — Data Analyst</title>
+<meta name="description" content="Data analyst in Agra, India. Python, SQL and Power BI — 100,000-row credit risk analysis, an 18-table PostgreSQL model, and dashboards that fit on one screen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Yogesh Kumar</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="assets/Yogesh-Kumar-Resume.pdf" download>Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Data Analyst <span aria-hidden="true">·</span> Agra, India</p>
+      <h1>I turn messy datasets into decisions<br class="br-lg"> someone can act on.</h1>
+      <p class="lede">
+        Computer Science graduate (B.Tech, 2024) with a Data Science certification and three
+        end-to-end analytics projects. I work in Python and SQL, and I build the Power BI
+        dashboard so the finding doesn't stay trapped in a notebook.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#work">
+          Read the work
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="assets/Yogesh-Kumar-Resume.pdf" download>
+          Download résumé <span class="btn-meta">PDF · 1 page</span>
+        </a>
+      </div>
+      <p class="availability">
+        <span class="dot-live" aria-hidden="true"></span>
+        Open to Data Analyst roles — remote, or Agra / Delhi NCR
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROOF STRIP ============ -->
+  <section class="strip" aria-label="Scale of work">
+    <div class="wrap strip-grid">
+      <div class="stat">
+        <div class="stat-num">100,000</div>
+        <div class="stat-label">credit records analysed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">18</div>
+        <div class="stat-label">tables in the SQL model</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">32</div>
+        <div class="stat-label">visuals across 3 dashboard pages</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">end-to-end projects shipped</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work" class="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p class="section-sub">Two projects, told through the finding rather than the tooling.</p>
+      </div>
+
+      <!-- PROJECT 1 -->
+      <article class="case">
+        <div class="case-media">
+          <a class="zoom" href="assets/paisabazaar-dashboard.png" target="_blank" rel="noopener">
+            <img src="assets/paisabazaar-dashboard.png"
+                 alt="Dark-themed Power BI dashboard showing total customers, applications, average income, debt-to-income ratio, and score distributions across income, age and credit-mix bands."
+                 loading="lazy" width="1303" height="733">
+          </a>
+          <p class="caption">Page 1 of the Power BI report — book overview <span class="zoom-hint">click to enlarge</span></p>
+        </div>
+        <div class="case-body">
+          <p class="case-kicker">Python · SQL · Power BI</p>
+          <h3>Credit Risk &amp; Identity Fraud Analysis</h3>
+          <p class="case-meta">100,000 applications · 12,500 customers · 8 months · 28 columns</p>
+
+          <p>
+            A credit-bureau export from Paisabazaar, arriving as messy as real bureau exports do.
+            The question was simple: what actually separates a <strong>Good</strong> credit score
+            from a <strong>Poor</strong> one — and how much of this data can be trusted at all?
+          </p>
+
+          <div class="finding">
+            <p class="finding-label">The finding</p>
+            <p>
+              Outstanding debt is the strongest divider — Poor customers carry
+              <strong>2.6× the debt</strong> of Good customers. Credit utilisation, the metric
+              almost everyone expects to matter, is <strong>flat across all three classes
+              (r = +0.046)</strong>.
+            </p>
+          </div>
+
+          <ul class="bullets">
+            <li>Cleaned five distinct defects before trusting anything: age recorded under 18 in <strong>5,868 rows</strong>, credit history longer than the customer has been alive in <strong>11,824 rows</strong>, and 6,261 unparsed loan-type strings.</li>
+            <li>Kept <strong>22,929 flagged outlier rows (22.9%)</strong> instead of deleting them — every flag sat on the high side, which is the long tail of debt, not a data-entry error. Removing them would have deleted the customers a risk team cares about most.</li>
+            <li>Ran an identity-fraud check on Name + SSN: <strong>1,829 names (18.1%)</strong> hold between two and six SSNs, covering <strong>33,608 rows</strong> of the book.</li>
+            <li>Shipped a <strong>3-page Power BI report with 32 visuals</strong> — book overview, score drivers, and risk segments — so the whole finding reads on one screen.</li>
+          </ul>
+
+          <p class="case-links">
+            <a class="text-link" href="https://github.com/Yogesh2201/paisabazaar-banking-fraud-analysis">Repository &amp; notebook <span aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="case case-reverse">
+        <div class="case-media">
+          <a class="zoom" href="assets/bookmyshow-erd.png" target="_blank" rel="noopener">
+            <img src="assets/bookmyshow-erd.png"
+                 alt="Entity-relationship diagram for the BookMyShow schema, showing show, show_seat, booking, booking_seat, booking_charge, payment, refund and cancellation_policy tables with their relationships."
+                 loading="lazy" width="2302" height="1817">
+          </a>
+          <p class="caption">The booking and money side of the model <span class="zoom-hint">click to enlarge</span></p>
+        </div>
+        <div class="case-body">
+          <p class="case-kicker">PostgreSQL · SQL · ER modelling</p>
+          <h3>BookMyShow — Relational Data Model</h3>
+          <p class="case-meta">18 tables · 565 lines of DDL · 6 enums · ~40 constraints</p>
+
+          <p>
+            A ticketing platform isn't a shop. Stock can be restocked; <strong>a seat for a 7:30 PM
+            show can be sold exactly once.</strong> On a Saturday evening a few hundred people reach
+            for the same twenty rows at the same time, so the database has to do real work rather
+            than just store rows.
+          </p>
+
+          <div class="finding">
+            <p class="finding-label">The design decision</p>
+            <p>
+              Seat <em>layout</em> lives in <code>seat</code> and never changes. Seat
+              <em>inventory</em> lives in <code>show_seat</code> — one row per seat per show, with
+              its own price and an <code>AVAILABLE / HELD / BOOKED</code> status. A
+              <code>UNIQUE (show_id, seat_id)</code> constraint means the <strong>database</strong>
+              rejects the second booking, not the application.
+            </p>
+          </div>
+
+          <ul class="bullets">
+            <li>Modelled the full booking path: city → cinema → screen → seat → show → booking → payment → refund → review.</li>
+            <li>Seat holds carry a <code>held_until</code> expiry with a CHECK constraint, so an abandoned checkout releases its seat instead of blocking it forever.</li>
+            <li>Refunds are expressible per line because every amount is its own <code>booking_charge</code> row with an <code>is_refundable</code> flag — ticket, convenience fee, GST and delivery behave differently, and one "cancelled" column can't represent that.</li>
+            <li><code>payment.idempotency_key</code> is UNIQUE, so a gateway sending the same success callback twice doesn't create two bookings.</li>
+          </ul>
+
+          <p class="case-links">
+            <a class="text-link" href="https://github.com/Yogesh2201/bookmyshow-data-model">Schema &amp; write-up <span aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </article>
+
+      <!-- SMALLER WORK -->
+      <div class="also">
+        <p class="also-label">Also built</p>
+        <div class="also-item">
+          <h4>Brain Tumour Detection — Convolutional Neural Network</h4>
+          <p>
+            A CNN in TensorFlow/Keras classifying labelled medical images as tumour / no tumour,
+            using rotation, flip and zoom augmentation to reduce overfitting on a small training
+            set. Evaluated with precision, recall and F1 rather than accuracy alone — in screening,
+            the false negative is the expensive error.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section id="approach" class="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How I work</h2>
+        <p class="section-sub">Three habits that came out of these projects, not a course.</p>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <span class="p-num">01</span>
+          <h3>Audit before analysis</h3>
+          <p>
+            Every one of these datasets had a defect that would have inverted the conclusion.
+            Age recorded under 18. Credit history longer than the person's life. Two columns
+            that were the same column twice. I check before I trust.
+          </p>
+        </div>
+        <div class="principle">
+          <span class="p-num">02</span>
+          <h3>Report the flat line</h3>
+          <p>
+            Credit utilisation showed no relationship with the score (r = +0.046). That's a
+            boring result and it went in the report anyway, because a finding that only appears
+            when it's flattering isn't a finding.
+          </p>
+        </div>
+        <div class="principle">
+          <span class="p-num">03</span>
+          <h3>End on one screen</h3>
+          <p>
+            A notebook is where the work happens, not where it lands. Every project ends in a
+            Power BI page or a diagram someone can read in thirty seconds without opening code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills">
+    <div class="wrap">
+      <h2>Tools</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>Languages</h3>
+          <p>Python (pandas, NumPy, Matplotlib, scikit-learn), SQL, Java</p>
+        </div>
+        <div class="skill">
+          <h3>Analysis</h3>
+          <p>EDA, data cleaning, statistical analysis, correlation &amp; IQR outlier treatment, data-quality auditing, KPI definition</p>
+        </div>
+        <div class="skill">
+          <h3>SQL &amp; modelling</h3>
+          <p>PostgreSQL, multi-table joins, schema design, normalisation, ER modelling, constraints and enums</p>
+        </div>
+        <div class="skill">
+          <h3>BI &amp; visualisation</h3>
+          <p>Power BI (multi-page reports, KPI cards), Tableau, Matplotlib</p>
+        </div>
+        <div class="skill">
+          <h3>Machine learning</h3>
+          <p>scikit-learn, TensorFlow, Keras, CNN, data augmentation, model evaluation</p>
+        </div>
+        <div class="skill">
+          <h3>Everyday</h3>
+          <p>Jupyter Notebook, Git, GitHub, Excel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <p class="kicker">Contact</p>
+        <h2>Hiring for a data role?</h2>
+        <p class="contact-lede">
+          I reply to every message, and I'm happy to walk through any project here line by line —
+          including the parts that didn't work.
+        </p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:yogeshverma6595@gmail.com">yogeshverma6595@gmail.com</a>
+          <a class="btn btn-ghost" href="assets/Yogesh-Kumar-Resume.pdf" download>Résumé (PDF)</a>
+        </div>
+        <p class="contact-meta">
+          <a href="https://www.linkedin.com/in/yogesh-kumar-9b78b11b9">LinkedIn</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/Yogesh2201">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="tel:+919557832534">+91 95578 32534</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>Yogesh Kumar — Data Analyst, Agra, Uttar Pradesh, India</p>
+    <p class="foot-links">
+      <a href="#top">Back to top</a>
+      <a href="https://github.com/Yogesh2201">GitHub</a>
+      <a href="https://www.linkedin.com/in/yogesh-kumar-9b78b11b9">LinkedIn</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
